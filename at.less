@@ -1,0 +1,39 @@
+ul.name-list{
+  display: none;
+  position: absolute;
+  list-style: none;
+  z-index: 11111111;
+  font-size: 12px;
+  background-color: #F1F5f6;
+  padding: 5px 5px;
+  -webkit-box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.3);
+
+  li.at-tips {
+    color: #9c9c9c;
+  }
+  
+  li {
+    @type: all;
+    @duration: 0.2s;
+    @ease-type: ease-in;
+    -webkit-transition: @type @duration @ease-type;
+    -moz-transition: @type @duration @ease-type;
+    -ms-transition: @type @duration @ease-type;
+    -o-transition: @type @duration @ease-type;
+    transition: @type @duration @ease-type;
+    padding: 0px 5px;
+    height: 20px;
+    cursor: pointer;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  li.high-light {
+    color: #fff;
+    background: #00c09b;
+  }
+}
